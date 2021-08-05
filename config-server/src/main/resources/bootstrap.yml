@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/8500205266/microservices-demo28
+          searchPaths: config-server-repository
+          default-label: master
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: prashanth
